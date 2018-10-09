@@ -6,7 +6,26 @@ namespace Lab01_AboutMeQuiz
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Console.WriteLine(GuessDessert());
+            
         }
+
+        static string GuessDessert()
+        {
+            Console.WriteLine("What is my favorite dessert?");
+            string guess = Console.ReadLine();
+
+            if (guess == "tiramisu" || guess == "panna cotta")
+            {
+               return "Correct!";
+            }
+            else 
+            {
+                return "Incorrect, my favorite dessert is tiramisu and panna cotta";
+            }
+
+
+        }
+  
     }
 }
