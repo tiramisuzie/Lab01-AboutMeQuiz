@@ -29,8 +29,19 @@ namespace Lab01_AboutMeQuiz
 
         static int GuessDay()
         {
-            Console.WriteLine('What day of the month was I born?')
+            Console.WriteLine('What day of the month was I born?');
 
+        }
+
+        static string GuessTravel()
+        {
+            Console.WriteLine("What is my favorite place to travel to?");
+            string guess = Console.ReadLine();
+
+            if (guess == "Japan")
+            {
+                return "correct";
+            }
         }
     }
 }
