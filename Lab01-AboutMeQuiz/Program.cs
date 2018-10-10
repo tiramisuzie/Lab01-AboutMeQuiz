@@ -30,7 +30,7 @@ namespace Lab01_AboutMeQuiz
 
         static int GuessDay()
         {
-            Console.WriteLine('What day of the month was I born?');
+            Console.WriteLine("What day of the month was I born?");
             string guess = Console.ReadLine();
             if (guess == "28")
             {
