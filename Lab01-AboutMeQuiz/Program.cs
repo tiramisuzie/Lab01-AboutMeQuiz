@@ -9,6 +9,8 @@ namespace Lab01_AboutMeQuiz
             Console.WriteLine(GuessDessert());
             Console.WriteLine(GuessDay() == 28 ? "Correct" : "Incorrect, I was born on the 28th");
             Console.WriteLine(GuessAnimals() ? "Correct" : "Incorrect, I love animals");
+            Console.WriteLine(GuessTravel());
+            Console.WriteLine(GuessArtist());
         }
 
         static string GuessDessert()
