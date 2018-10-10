@@ -26,6 +26,11 @@ namespace Lab01_AboutMeQuiz
 
 
         }
-  
+
+        static int GuessDay()
+        {
+            Console.WriteLine('What day of the month was I born?')
+
+        }
     }
 }
