@@ -68,5 +68,19 @@ namespace Lab01_AboutMeQuiz
                 return false;
             }
         }
+        static string GuessArtist()
+        {
+            Console.WriteLine("What is my favorite artist");
+            string guess = Console.ReadLine();
+
+            if ( guess == "bob ross")
+            {
+                return "correct! We don't make mistakes, just happy little accidents";
+            }
+            else
+            {
+                return "not quite, it's Bob Ross. He taught me that we don't make mistakes, just happy little accidents";
+            }
+        }
     }
 }
