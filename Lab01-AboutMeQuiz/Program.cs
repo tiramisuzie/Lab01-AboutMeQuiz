@@ -7,6 +7,7 @@ namespace Lab01_AboutMeQuiz
         static void Main(string[] args)
         {
             Console.WriteLine(GuessDessert());
+            Console.WriteLine(GuessDay() == 28 ? "Correct" : "Incorrect, I was born on the 28th");
             
         }
 
@@ -30,7 +31,9 @@ namespace Lab01_AboutMeQuiz
         static int GuessDay()
         {
             Console.WriteLine('What day of the month was I born?');
+            int guess = int.Parse(Console.ReadLine());
 
+            return guess;
         }
 
         static string GuessTravel()
