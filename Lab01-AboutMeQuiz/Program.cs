@@ -44,6 +44,11 @@ namespace Lab01_AboutMeQuiz
             if (guess == "Japan")
             {
                 return "correct";
+            } 
+            else
+            {
+                return "that sounds like a great place to travel too! Currently my favorite place to visit is Japan"
+            
             }
         }
     }
