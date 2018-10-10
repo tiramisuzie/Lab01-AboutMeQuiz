@@ -7,7 +7,10 @@ namespace Lab01_AboutMeQuiz
         static void Main(string[] args)
         {
             Console.WriteLine(GuessDessert());
-            
+            Console.WriteLine(GuessDay() == 28 ? "Correct" : "Incorrect, I was born on the 28th");
+            Console.WriteLine(GuessAnimals() ? "Correct" : "Incorrect, I love animals");
+            Console.WriteLine(GuessTravel());
+            Console.WriteLine(GuessArtist());
         }
 
         static string GuessDessert()
@@ -29,8 +32,57 @@ namespace Lab01_AboutMeQuiz
 
         static int GuessDay()
         {
-            Console.WriteLine('What day of the month was I born?')
+            Console.WriteLine("What day of the month was I born?");
+            string guess = Console.ReadLine();
+            if (guess == "28")
+            {
+                return 28;
+            }
+            return 0;
+        }
 
+        static string GuessTravel()
+        {
+            Console.WriteLine("What is my favorite place to travel to?");
+            string guess = Console.ReadLine();
+
+            if (guess == "Japan")
+            {
+                return "correct";
+            } 
+            else
+            {
+                return "that sounds like a great place to travel too! Currently my favorite place to visit is Japan";
+            
+            }
+        }
+        static bool GuessAnimals()
+        {
+            Console.WriteLine("Do I like animals?");
+            string guess = Console.ReadLine();
+
+            if (guess == "y" || guess == "yes")
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+        static string GuessArtist()
+        {
+            Console.WriteLine("What is my favorite artist");
+            string guess = Console.ReadLine();
+
+            if ( guess == "bob ross")
+            {
+                return "correct! We don't make mistakes, just happy little accidents";
+            }
+            else
+            {
+                return "not quite, it's Bob Ross. He taught me that we don't make mistakes, just happy little accidents";
+            }
         }
     }
 }

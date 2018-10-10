@@ -5,10 +5,12 @@ This is a .NET Core Console Application written in C#. In the command prompt /or
 fork and clone down the repo
 
 ## Visual
-![Sample view](https://imgur.com/rn49bzr)
+![Sample view] (https://imgur.com/rn49bzr)
 
 ## Version
 10/09/2018 1.0.0
 #Contribution
 Suzanne Su
+
 ## License
+MIT
