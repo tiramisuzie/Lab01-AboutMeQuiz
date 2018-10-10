@@ -8,7 +8,7 @@ namespace Lab01_AboutMeQuiz
         {
             Console.WriteLine(GuessDessert());
             Console.WriteLine(GuessDay() == 28 ? "Correct" : "Incorrect, I was born on the 28th");
-            
+            Console.WriteLine(GuessAnimals() ? "Correct" : "Incorrect, I love animals");
         }
 
         static string GuessDessert()
@@ -31,9 +31,12 @@ namespace Lab01_AboutMeQuiz
         static int GuessDay()
         {
             Console.WriteLine('What day of the month was I born?');
-            int guess = int.Parse(Console.ReadLine());
-
-            return guess;
+            string guess = Console.ReadLine();
+            if (guess == "28")
+            {
+                return 28;
+            }
+            return 0;
         }
 
         static string GuessTravel()
@@ -47,8 +50,22 @@ namespace Lab01_AboutMeQuiz
             } 
             else
             {
-                return "that sounds like a great place to travel too! Currently my favorite place to visit is Japan"
+                return "that sounds like a great place to travel too! Currently my favorite place to visit is Japan";
             
+            }
+        }
+        static bool GuessAnimals()
+        {
+            Console.WriteLine("Do I like animals?");
+            string guess = Console.ReadLine();
+
+            if (guess == "y" || guess == "yes")
+            {
+                return true;
+            }
+            else
+            {
+                return false;
             }
         }
     }
